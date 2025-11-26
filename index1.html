@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>阮明俊 Nguyen Minh Tuan 個人介紹</title>
+  <style>
+    body {
+      font-family: "Noto Sans TC", sans-serif;
+      background: linear-gradient(135deg, #f0f8ff, #e6f2ff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .student-card {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 20px;
+    }
+
+    .student-card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #0078d7;
+    }
+
+    .student-info h3 {
+      margin: 0 0 10px 0;
+      font-size: 22px;
+      color: #0078d7;
+    }
+
+    .student-info p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    section {
+      margin-top: 30px;
+    }
+
+    section h2 {
+      border-left: 6px solid #0078d7;
+      padding-left: 10px;
+      font-size: 20px;
+      color: #0078d7;
+    }
+
+    /* 📸 個人照片區（Gallery）*/
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .student-card {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .student-card img {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    阮明俊 Nguyen Minh Tuan 個人介紹
+  </header>
+
+  <div class="container">
+
+    <!-- 基本資訊 -->
+    <div class="student-card">
+      <img src="images/minhtuan.jpg" alt="阮明俊 Nguyen Minh Tuan">
+      <div class="student-info">
+        <h3>阮明俊 / Nguyen Minh Tuan</h3>
+        <p>國籍：越南｜年齡：23</p>
+        <p>興趣：聽音樂、羽球、游泳</p>
+        <p>想體驗：夜市、美食</p>
+      </div>
+    </div>
+
+    <!-- 📸 個人照片區 -->
+    <section>
+      <h2>個人照片</h2>
+      <div class="gallery">
+        <img src="images/photo1.jpg" alt="Photo 1">
+        <img src="images/photo2.jpg" alt="Photo 2">
+        <img src="images/photo3.jpg" alt="Photo 3">
+      </div>
+    </section>
+
+    <section>
+      <h2>關於我</h2>
+      <p>大家好！我是來自越南的阮明俊，目前在台灣學習中文與文化。我熱愛音樂與運動，希望能在台灣探索不同的生活方式，特別是夜市文化與道地美食。</p>
+    </section>
+
+    <section>
+      <h2>聯絡資訊</h2>
+      <p>Email：<a href="mailto:minhtuan@example.com">minhtuan@example.com</a></p>
+      <p>Instagram：<a href="https://instagram.com/minhtuan" target="_blank">@minhtuan</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Nguyen Minh Tuan. All rights reserved.
+  </footer>
+
+</body>
+</html>
